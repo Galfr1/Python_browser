@@ -6,6 +6,7 @@ search = input()
 if(eng == 1):
     google1 = "https://www.google.co.il/search?q="
     google2 = "&ie=UTF-8&oe="
+    search = search.replace("+", "%2B")
     sl = search.split()
     csl = len(sl)
     c = 0
@@ -17,6 +18,7 @@ if(eng == 1):
 if(eng == 2):
     bing1 = "https://www.bing.com/search?q="
     bing2 = "&form=QBLH&sp=-1&pq=hello&sc=8-5&qs=n&sk=&cvid=0FE7C3D3A8494830B5B8BC423C9FCC73"
+    search = search.replace("+", "%2B")
     sl = search.split()
     csl = len(sl)
     c = 0
@@ -28,6 +30,7 @@ if(eng == 2):
 if(eng == 3):
     yahoo1 = "https://search.yahoo.com/search?p="
     yahoo2 = "&fr=yfp-t&fp=1&toggle=1&cop=mss&ei=UTF-8"
+    search = search.replace("+", "%2B")
     sl = search.split()
     csl = len(sl)
     c = 0
